@@ -29,8 +29,15 @@ public class ArrayApp {
 
         Scanner myScan = new Scanner(System.in);
 
-        System.out.println("Please enter a new number: ");
-        anArray[10] = myScan.nextInt();
+        try{
+            System.out.println("Please enter a new number: ");
+            anArray[10] = myScan.nextInt();
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Cant proceed !!");
+        }
+
 
     }
 
